@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .background-container {
+      width: 100%;
+      height: 300px; /* Adjust the height as needed */
+      background-image: url("images/background.jpeg"); /* Specify the path to your image */
+      background-size: cover;
+      background-position: center;
+      color: #fff; /* Text color on top of the image */
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+      position: relative; /* Necessary for absolute positioning of the caption */
+    }
+
+    .image-caption {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  </style>
+  <title>Background Image Example with Caption List</title>
+</head>
+<body>
+
+<div class="background-container">
+  <h1>Your Content Goes Here</h1>
+  <p>Any additional text or content you want to display on top of the image.</p>
+  <div class="image-caption">
+    <p>References:</p>
+    <ul>
+      <li>Foto von <a href="https://unsplash.com/de/@danny144?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Dan Nelson</a> auf <a href="https://unsplash.com/de/fotos/schwarzes-iphone-5-neben-braun-gerahmter-brille-und-schwarzem-iphone-5-c-ah-HeguOe9k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></li>
+      <li>Foto von <a href="https://unsplash.com/de/@guerrillabuzz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">GuerrillaBuzz</a> auf <a href="https://unsplash.com/de/fotos/ikone-SYofhg_IX3A?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
