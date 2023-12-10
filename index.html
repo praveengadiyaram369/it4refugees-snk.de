@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>it4refugees-snk</title>
+  <title>IT4Refugees-SNK</title>
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="..." crossorigin="anonymous">
   <style>
     /* Add custom styles here if needed */
-    body {
-      padding-bottom: 60px; /* Adjust this value based on your footer height */
-    }
+
+    body.navbar-fixed {
+        padding-top: 60px; /* Adjust this value based on the height of your fixed navbar */
+      }
     .footer {
       background-color: #5998a1;
       padding: 20px;
@@ -20,211 +21,266 @@
     }
     .background-container-1 {
         width: 100%;
-        height: 500px; /* Adjust the height as needed */
+        height: 80vh; /* Adjust the height as needed */
         background-image: url("images/background.jpeg"); /* Specify the path to your image */
-        background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
       }
       .background-container-2 {
         width: 100%;
-        height: 500px; /* Adjust the height as needed */
+        height: 60vh; /* Adjust the height as needed */
         background-image: url("images/background2.jpeg"); /* Specify the path to your image */
-        background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
       }
+      .logo-center {
+        display: block;
+        margin: 0 auto; /* This centers the image horizontally */
+        width: 400px; /* Set the width as needed */
+        height: auto; /* Maintain aspect ratio */
+      }
+
+      @media (min-width: 768px) {
+        .background-container-1 {
+            background-attachment: fixed;
+        }
+        .background-container-2 {
+            background-attachment: fixed;
+        }
+    }
+    body {
+        background-color: #f8f9fa;
+        color: #495057;
+    }
+
+    .card {
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .card-title {
+        text-align: center;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
+
+    .btn-success {
+        background-color: #28a745;
+        border-color: #28a745;
+    }
+
+    .btn-success:hover {
+        background-color: #218838;
+        border-color: #218838;
+    }
+
+    .btn-info {
+        background-color: #17a2b8;
+        border-color: #17a2b8;
+    }
+
+    .btn-info:hover {
+        background-color: #138496;
+        border-color: #138496;
+    }
+
+    .text-info {
+        color: #17a2b8 !important;
+    }
+
+    /* Custom styles for larger navbar items */
+    .navbar-nav .nav-item {
+        font-size: 22px;   /* Adjust the font size as needed */
+        }
   </style>
 </head>
 <body>
-
-    <header class="bg-info text-white text-center py-3">
-        <div class="container">
-          <h2 class="display-4">IT4refugees-SNK</h2>
-          <p class="lead mb-3">Soziales Netzwerk Koblenz e.V. | Integration durch Technik und IT-Sicherheit für alle</p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info text-white text-center py-4">
+      <a class="navbar-brand" href="#">
+        <img src="images/it4refugees_logo.png" width="35" height="35" class="d-inline-block align-top" alt="Your Logo">
+        IT4Refugees-SNK
+      </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#blog">Blog</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-      </header>
+      </nav>
 
-      <div class="background-container-1">
-    </div>
 
-      <div class="container mt-4 text-center">
-        <div class="container mt-5">
-            <div class="row" style="margin: 20px;">
-              <div class="col-md-6">
-                <h3>Neueste Beiträge ..</h3>
-              </div>
-              <div class="col-md-6">
-                <div class="dropdown">
-                  <button class="btn btn-info dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                    Select Language
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="languageDropdown">
-                    <a class="dropdown-item" href="#" onclick="changeLanguage('German')">German</a>
-                    <a class="dropdown-item" href="#" onclick="changeLanguage('English')">English</a>
-                    <a class="dropdown-item" href="#" onclick="changeLanguage('Ukrainian')">Ukrainian</a>
-                    <a class="dropdown-item" href="#" onclick="changeLanguage('Arabic')">Arabic</a>
-                  </div>
-                </div>
-              </div>
+      <div class="container-fluid">
+        <div class="row">
+            <div class="background-container-1">
             </div>
-          </div>
-      
-        <div class="row" style="margin-bottom: 100px;">
-          <!-- Card 1 -->
-          <div class="col-sm-4">
-            <div class="card text-center h-80" style="margin: 10px;">
-              <div class="card-header">
-                IT-Sicherheit
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Einführung in das Thema Internetbetrug</h5>
-                <p class="card-text">Erläuterung, was Internetbetrug ist und wie er funktioniert.</p>
-                <a href="#" class="btn btn-info">Mehr lesen</a>
-              </div>
-      
-            </div>
-          </div>
-      
-          <!-- Card 2 -->
-          <div class="col-sm-4">
-              <div class="card text-center h-80" style="margin: 10px;">
-                <div class="card-header">
-                  IT-Sicherheit
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Risiken im Internet </h5>
-                  <p class="card-text">Vorstellung von häufig verwendeten Betrugsmethoden.                </p>
-                  <a href="#" class="btn btn-info">Mehr lesen</a>
-                </div>
-        
-              </div>
-            </div>
-      
-          <!-- Card 3 -->
-          <div class="col-sm-4">
-              <div class="card text-center h-80" style="margin: 10px;">
-                <div class="card-header">
-                  IT-Sicherheit
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Sicherheits-software und Tools </h5>
-                  <p class="card-text">Erklären, wie man sicherheitsbewusste Apps und Dienste verwendet.</p>
-                  <a href="#" class="btn btn-info">Mehr lesen</a>
-                </div>
-        
-              </div>
-            </div>
-      
-          <!-- Card 4 -->
-          <div class="col-sm-4">
-              <div class="card text-center h-80" style="margin: 10px;">
-                <div class="card-header">
-                  IT-Sicherheit
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Sichere Internetnutzung</h5>
-                  <p class="card-text">Tipps und bewährte Verfahren zur sicheren Internetnutzung.                </p>
-                  <a href="#" class="btn btn-info">Mehr lesen</a>
-                </div>
-        
-              </div>
-            </div>
-      
-          <!-- Card 5 -->
-          <div class="col-sm-4">
-              <div class="card text-center h-80" style="margin: 10px;">
-                <div class="card-header">
-                  IT-Sicherheit
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Schutz persönlicher Informationen</h5>
-                  <p class="card-text">Datenschutz und sichere Kommunikation.</p>
-                  <a href="#" class="btn btn-info">Mehr lesen</a>
-                </div>
-        
-              </div>
-            </div>
-      
-          <!-- Card 6 -->
-          <div class="col-sm-4">
-              <div class="card text-center h-80" style="margin: 10px;">
-                <div class="card-header">
-                  IT-Sicherheit
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Erkennen von Betrug</h5>
-                  <p class="card-text">Identifizierung von verdächtigen E-Mails, Websites und Nachrichten.                </p>
-                  <a href="#" class="btn btn-info">Mehr lesen</a>
-                </div>
-        
-              </div>
-            </div>
-
-                      <!-- Card 4 -->
-          <div class="col-sm-4">
-            <div class="card text-center h-80" style="margin: 10px;">
-              <div class="card-header">
-                IT-Sicherheit
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Sichere Internetnutzung</h5>
-                <p class="card-text">Tipps und bewährte Verfahren zur sicheren Internetnutzung.                </p>
-                <a href="#" class="btn btn-info">Mehr lesen</a>
-              </div>
-      
-            </div>
-          </div>
-    
-        <!-- Card 5 -->
-        <div class="col-sm-4">
-            <div class="card text-center h-80" style="margin: 10px;">
-              <div class="card-header">
-                IT-Sicherheit
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Schutz persönlicher Informationen</h5>
-                <p class="card-text">Datenschutz und sichere Kommunikation.</p>
-                <a href="#" class="btn btn-info">Mehr lesen</a>
-              </div>
-      
-            </div>
-          </div>
-    
-        <!-- Card 6 -->
-        <div class="col-sm-4">
-            <div class="card text-center h-80" style="margin: 10px;">
-              <div class="card-header">
-                IT-Sicherheit
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Erkennen von Betrug</h5>
-                <p class="card-text">Identifizierung von verdächtigen E-Mails, Websites und Nachrichten.                </p>
-                <a href="#" class="btn btn-info">Mehr lesen</a>
-              </div>
-      
-            </div>
-          </div>
-      
-          <!-- Add more cards as needed -->
-      
         </div>
       </div>
-      <div class="background-container-2">
+      
+
+      <div class="container mt-5">
+
+        <div id="about" class="card">
+            <div class="card-body">
+                <h1 class="card-title text-info">Welcome to IT4Refugees - Social Network Koblenz</h1>
+                <h3 class="card-title mt-4 text-info">Integration through Technology and IT-security for everyone</h3>
+                <h4 class="card-title mt-4 text-info">About Us</h4>
+                <p class="card-text">At IT4Refugees - Social Network Koblenz, we believe in the transformative power of technology to bridge gaps, foster integration, and create opportunities for everyone. Our mission is to provide a supportive platform where refugees can harness the potential of information technology to rebuild their lives and contribute to their new communities.</p>
+                <h4 class="card-title mt-4 text-info">Our Vision</h4>
+                <p class="card-text">Imagine a world where every individual, regardless of their background, has access to the tools and knowledge needed to thrive in the digital age. That's the vision driving IT4Refugees - Social Network Koblenz. We aspire to be a catalyst for positive change, using technology as a means of empowerment and inclusion.</p>
+            </div>
+        </div>
+    
+      
+        <div class="container-fluid">
+          <div class="row">
+            <img src="images/it4refugees_logo.png" alt="Description of the image" class="logo-center">
+
+          </div>
+        </div>
+        <br>
+
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title text-info">What We Offer</h4>
+                <ul class="card-text">
+                    <li><strong>IT Training and Workshops:</strong> Empowerment through Education - Gain essential IT skills through our comprehensive training programs and workshops. From basic digital literacy to advanced coding, our courses are designed to enhance your proficiency and open doors to new opportunities.</li>
+                    <li><strong>Community Building:</strong> Connect, Share, Thrive - Join a supportive community of individuals who share similar journeys and aspirations. Our social network provides a space to connect, share experiences, and collaborate on projects that promote integration and understanding.</li>
+                    <li><strong>IT Security for All:</strong> Safety in the Digital World - In an increasingly digital world, ensuring online safety is crucial. Our IT security initiatives aim to educate and empower refugees on how to protect themselves online, fostering a secure environment for everyone.</li>
+                </ul>
+            </div>
+        </div>
+
+    
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title text-info">How You Can Contribute</h4>
+                <ul class="card-text">
+                    <li><strong>Volunteer:</strong> Share Your Knowledge - We welcome volunteers with IT expertise to contribute to our training programs or mentor individuals seeking to enhance their skills. Your knowledge can make a significant impact on someone's journey toward self-sufficiency.</li>
+                    <li><strong>Donate:</strong> Support the Cause - Your financial contributions help us sustain our programs and reach more individuals. Every donation, big or small, goes directly toward providing IT resources and training to refugees in need.</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title text-info">Get Involved Today!</h4>
+                <p class="card-text">Join us in building a future where technology becomes a tool for unity, understanding, and empowerment. Together, we can create a community where everyone, regardless of their background, has the opportunity to thrive in the digital era.</p>
+                <p class="card-text">Connect with us on social media, attend our events, or reach out to learn more about how you can get involved. Let's build a brighter future together through IT4Refugees - Social Network Koblenz!</p>
+            </div>
+        </div>
+
+        <div class="container mt-4">
+            <div class="row">
+              <div class="col btn-lg text-center">
+                <a href="http://www.soziales-netzwerk-koblenz.de/" class="btn btn-success">Read blog posts</a>
+              </div>
+              <div class="col btn-lg text-center">
+                <a href="http://www.soziales-netzwerk-koblenz.de/" class="btn btn-info">Learn More</a>
+              </div>
+            </div>
+          </div>
+          
+        <br>
+    
     </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="background-container-2">
+            </div>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div id="contact" class="card">
+            <div class="card-header" id="referencesHeader">
+                <h2 class="card-title text-center text-info">Contact Us</h2>
+              </div>
+          <div class="card-body">
+            <form action="process_form.php" method="post">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="name">Name:</label>
+                  <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" class="form-control" id="subject" name="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message (up to 100 words):</label>
+                <textarea class="form-control" id="message" name="message" rows="4" maxlength="100" required></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-info">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <br>
 
   <!-- Bootstrap JS, Popper.js, and jQuery -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
  
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer text-center">
     <div class="container">
-      <p>&copy; 2023 IT4refugees-SNK</p>
+        <p>&copy; 2023 IT4refugees-SNK - Soziales Netzwerk Koblenz E.V.<br>STEGEMANNSTR: 33-41 und LÖHRRONDELL 8, 56068 KOBLENZ, DE   </p>
     </div>
-  </footer>
+</footer>
+
+<div class="container mt-3">
+    <div class="card">
+        <div class="card-header" id="referencesHeader">
+            <h4 class="card-title text-center text-info">References</h4>
+
+        </div>
+  
+      <div id="referencesCollapse" class="collapse show" aria-labelledby="referencesHeader">
+        <div class="card-body">
+          <div class="image-caption text-center">
+            <ul>
+              <li>Foto von <a href="https://unsplash.com/de/@danny144?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Dan Nelson</a> auf <a href="https://unsplash.com/de/fotos/schwarzes-iphone-5-neben-braun-gerahmter-brille-und-schwarzem-iphone-5-c-ah-HeguOe9k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></li>
+              <li>Foto von <a href="https://unsplash.com/de/@guerrillabuzz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">GuerrillaBuzz</a> auf <a href="https://unsplash.com/de/fotos/ikone-SYofhg_IX3A?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></li>
+              <li>Foto von <a href="https://www.flaticon.com/free-icons/information" title="information icons">Information icons created by Freepik - Flaticon</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script>
     function changeLanguage(languageCode) {
@@ -237,12 +293,3 @@
 
 </body>
 </html>
-
-<div class="image-caption text-center">
-    <br>
-    <p>References:</p>
-    <ul>
-      <li>Foto von <a href="https://unsplash.com/de/@danny144?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Dan Nelson</a> auf <a href="https://unsplash.com/de/fotos/schwarzes-iphone-5-neben-braun-gerahmter-brille-und-schwarzem-iphone-5-c-ah-HeguOe9k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></li>
-      <li>Foto von <a href="https://unsplash.com/de/@guerrillabuzz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">GuerrillaBuzz</a> auf <a href="https://unsplash.com/de/fotos/ikone-SYofhg_IX3A?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></li>
-    </ul>
-  </div>
