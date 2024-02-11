@@ -1,4 +1,6 @@
 <?php
+header("Content-Type: application/json");
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = test_input($_POST["name"]);
     $email = test_input($_POST["email"]);
@@ -6,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = test_input($_POST["message"]);
 
     // Replace 'your_email@example.com' with the actual email address where you want to receive the messages
-    $to = "your_email@example.com";
+    $to = "it4refugees.snk@gmail.com";
     $subject = "New Contact Form Submission - $subject";
     $headers = "From: $name <$email>";
 
@@ -17,11 +19,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_message .= "Message: $message\n";
 
     // Send the email
-    mail($to, $subject, $email_message, $headers);
+    $success = mail($to, $subject, $email_message, $headers);
 
-    // Redirect to a thank-you page or display a success message
-    header("Location: thank_you.html");
-    exit();
+    // Prepare the response data
+    $response = array();
+    if ($success) {
+        $response["success"] = true;
+        $response["message"] = "Your message has been sent successfully!";
+    } else {
+        $response["success"] = false;
+        $response["message"] = "There was an error sending your message. Please try again later.";
+    }
+
+    // Output the response as JSON
+    echo json_encode($response);
 }
 
 function test_input($data) {

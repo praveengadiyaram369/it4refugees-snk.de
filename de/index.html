@@ -259,7 +259,7 @@
                 <h2 class="card-title text-center text-info">Contact Us</h2>
               </div>
           <div class="card-body">
-            <form action="process_form.php" method="post">
+            <form id="contactForm" method="post" onsubmit="event.preventDefault(); submitForm();">
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="name">Name:</label>
@@ -321,6 +321,42 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="../common/js/navbar.js"></script>
+  <script>
+    function showMessage(message) {
+      alert(message);
+    }
+    
+    function submitForm() {
+      // You can perform form validation here if needed
+    
+      // Assuming the form has an id="contactForm"
+      var form = document.getElementById("contactForm");
+      
+      // Example URL to your process_form.php file
+      var actionUrl = "../php/process_form.php";
+      
+      // Submit the form using fetch API
+      fetch(actionUrl, {
+        method: "POST",
+        body: new FormData(form)
+      })
+      .then(response => {
+        if (response.ok) {
+          // Form submission was successful
+          showMessage("Your message has been sent successfully!");
+        } else {
+          // Form submission failed
+          showMessage("There was an error sending your message. Please try again later.");
+        }
+      })
+      .catch(error => {
+        // An error occurred during the form submission
+        showMessage("There was an error sending your message. Please try again later.");
+        console.error("Error:", error);
+      });
+    }
+    </script>
+    
   
   
 
