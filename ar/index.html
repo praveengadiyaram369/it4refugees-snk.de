@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="ar">
 
 <head>
   <meta charset="UTF-8">
@@ -8,16 +8,15 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="../common/js/change-language.js"></script>
 
-
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="..."
     crossorigin="anonymous">
   <style>
-    /* Fügen Sie hier benutzerdefinierte Stile hinzu, falls erforderlich */
+    /* Add custom styles here if needed */
 
     body.navbar-fixed {
       padding-top: 60px;
-      /* Passen Sie diesen Wert basierend auf der Höhe Ihrer festen Navbar an */
+      /* Adjust this value based on the height of your fixed navbar */
     }
 
     .footer {
@@ -30,9 +29,9 @@
     .background-container-1 {
       width: 100%;
       height: 80vh;
-      /* Passen Sie die Höhe bei Bedarf an */
+      /* Adjust the height as needed */
       background-image: url("../common/images/background.jpeg");
-      /* Geben Sie den Pfad zu Ihrem Bild an */
+      /* Specify the path to your image */
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -41,9 +40,9 @@
     .background-container-2 {
       width: 100%;
       height: 60vh;
-      /* Passen Sie die Höhe bei Bedarf an */
+      /* Adjust the height as needed */
       background-image: url("../common/images/background2.jpeg");
-      /* Geben Sie den Pfad zu Ihrem Bild an */
+      /* Specify the path to your image */
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -52,11 +51,11 @@
     .logo-center {
       display: block;
       margin: 0 auto;
-      /* Zentriert das Bild horizontal */
+      /* This centers the image horizontally */
       width: 300px;
-      /* Legen Sie die Breite nach Bedarf fest */
+      /* Set the width as needed */
       height: auto;
-      /* Seitenverhältnis beibehalten */
+      /* Maintain aspect ratio */
     }
 
     @media (min-width: 768px) {
@@ -119,10 +118,10 @@
       color: #17a2b8 !important;
     }
 
-    /* Benutzerdefinierte Stile für größere Navbar-Elemente */
+    /* Custom styles for larger navbar items */
     .navbar-nav .nav-item {
       font-size: 22px;
-      /* Passen Sie die Schriftgröße bei Bedarf an */
+      /* Adjust the font size as needed */
     }
 
     .text-danger {
@@ -135,7 +134,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-info text-white text-center py-3">
     <a class="navbar-brand" href="index.html">
       <img src="../common/images/it4refugees_logo.png" width="35" height="35" class="d-inline-block align-top"
-        alt="Ihr Logo">
+        alt="Your Logo">
       IT4Refugees-SNK
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -145,16 +144,16 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Startseite</a>
+          <a class="nav-link" href="index.html">الصفحة الرئيسية</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about">Über uns</a>
+          <a class="nav-link" href="#about">حول</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">Kontakt</a>
+          <a class="nav-link" href="#contact">اتصل بنا</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="blog.html">Blog</a>
+          <a class="nav-link" href="blog.html">المدونة</a>
         </li>
       </ul>
     </div>
@@ -173,25 +172,25 @@
 
     <div class="card text-center mt-3">
       <div class="card-body">
-        <h3 class="card-title mb-3 text-info">Möchten Sie die Sprache ändern?</h3>
-        <h5 class="card-text text-info">Wählen Sie unten Ihre bevorzugte Sprache aus:</h5>
+        <h3 class="card-title mb-3 text-info">هل تريد تغيير اللغة؟</h3>
+        <h5 class="card-text text-info">اختر لغتك المفضلة أدناه:</h5>
         <div class="row justify-content-center">
           <div class="col-md-4">
-            <a href="#" class="btn btn-light btn-lg btn-block mb-3" onclick="changeLanguage('en')">
-              <img src="../common/flags/flag_en.png" alt="Englische Flagge" width="48" height="40">
-              <span class="ml-2">Englisch</span>
+            <a href="#" class="btn btn-light btn-lg btn-block mb-3" onclick="changeLanguage('de')">
+              <img src="../common/flags/flag_de.png" alt="German flag" width="48" height="40">
+              <span class="ml-2">الألمانية</span>
             </a>
           </div>
           <div class="col-md-4">
             <a href="#" class="btn btn-light btn-lg btn-block mb-3" onclick="changeLanguage('uk')">
-              <img src="../common/flags/flag_uk.png" alt="Ukrainische Flagge" width="48" height="40">
-              <span class="ml-2">Ukrainisch</span>
+              <img src="../common/flags/flag_uk.png" alt="Ukrainian flag" width="48" height="40">
+              <span class="ml-2">الأوكرانية</span>
             </a>
           </div>
           <div class="col-md-4">
-            <a href="#" class="btn btn-light btn-lg btn-block mb-3" onclick="changeLanguage('ar')">
-              <img src="../common/flags/flag_ar.png" alt="Arabische Flagge" width="48" height="40">
-              <span class="ml-2">Arabisch</span>
+            <a href="#" class="btn btn-light btn-lg btn-block mb-3" onclick="changeLanguage('en')">
+              <img src="../common/flags/flag_en.png" alt="English flag" width="48" height="40">
+              <span class="ml-2">الإنجليزية</span>
             </a>
           </div>
         </div>
@@ -200,31 +199,27 @@
   </div>
 
 
-
-
-
   <div class="container mt-5">
 
     <div id="about" class="card">
       <div class="card-body">
-        <h1 class="card-title text-info">Willkommen bei IT4Refugees - Soziales Netzwerk Koblenz</h1>
-        <h3 class="card-title mt-4 text-info">Integration durch Technologie und IT-Sicherheit für alle</h3>
-        <h4 class="card-title mt-4 text-info">Über uns</h4>
-        <p class="card-text">Bei IT4Refugees - Soziales Netzwerk Koblenz glauben wir an die transformative Kraft der
-          Technologie, um Lücken zu schließen, Integration zu fördern und Chancen für alle zu schaffen. Unsere Mission
-          ist es, eine unterstützende Plattform bereitzustellen, auf der Flüchtlinge das Potenzial der Informationstechnologie nutzen können, um ihr Leben wieder aufzubauen und zu ihren neuen Gemeinschaften beizutragen.</p>
-        <h4 class="card-title mt-4 text-info">Unsere Vision</h4>
-        <p class="card-text">Stellen Sie sich eine Welt vor, in der jeder, unabhängig von seiner Herkunft, Zugang zu
-          den Werkzeugen und Kenntnissen hat, die für ein gedeihliches Leben im digitalen Zeitalter erforderlich sind.
-          Das ist die Vision, die IT4Refugees - Soziales Netzwerk Koblenz antreibt. Wir streben danach, ein Katalysator
-          für positive Veränderungen zu sein, und nutzen die Technologie als Mittel zur Ermächtigung und Integration.</p>
+        <h1 class="card-title text-info">مرحبًا بكم في IT4Refugees - Social Network Koblenz</h1>
+        <h3 class="card-title mt-4 text-info">الاندماج من خلال التكنولوجيا وأمان تقنية المعلومات للجميع</h3>
+        <h4 class="card-title mt-4 text-info">من نحن</h4>
+        <p class="card-text">في IT4Refugees - Social Network Koblenz، نؤمن بقوة التحول التي يمكن أن تحققها التكنولوجيا في
+          سد الفجوات، وتعزيز الاندماج، وخلق الفرص للجميع. مهمتنا هي توفير منصة داعمة حيث يمكن للاجئين استغلال
+          إمكانيات تكنولوجيا المعلومات لإعادة بناء حياتهم والمساهمة في مجتمعاتهم الجديدة.</p>
+        <h4 class="card-title mt-4 text-info">رؤيتنا</h4>
+        <p class="card-text">تخيل عالمًا حيث يمتلك كل فرد، بغض النظر عن خلفيته، الوصول إلى الأدوات والمعرفة اللازمة
+          للنجاح في عصر الرقميات. هذه هي الرؤية التي تدفع IT4Refugees - Social Network Koblenz. نطمح في أن نكون
+          محفزًا للتغيير الإيجابي، باستخدام التكنولوجيا كوسيلة للتمكين والاندماج.</p>
       </div>
     </div>
 
 
     <div class="container-fluid">
       <div class="row">
-        <img src="../common/images/it4refugees_logo.png" alt="Beschreibung des Bildes" class="logo-center">
+        <img src="../common/images/it4refugees_logo.png" alt="Description of the image" class="logo-center">
 
       </div>
     </div>
@@ -232,16 +227,19 @@
 
     <div class="card">
       <div class="card-body">
-        <h4 class="card-title text-info">Was wir anbieten</h4>
+        <h4 class="card-title text-info">ما نقدمه</h4>
         <ul class="card-text">
-          <li><strong>IT-Schulungen und Workshops:</strong> Ermächtigung durch Bildung - Erlangen Sie wesentliche IT-Kenntnisse
-            durch unsere umfassenden Schulungsprogramme und Workshops. Von grundlegenden digitalen Kompetenzen bis hin
-            zur fortgeschrittenen Codierung sind unsere Kurse darauf ausgelegt, Ihre Kompetenz zu verbessern und Türen zu neuen Möglichkeiten zu öffnen.</li>
-          <li><strong>Gemeinschaftsaufbau:</strong> Vernetzen, Teilen, Gedeihen - Werden Sie Teil einer unterstützenden
-            Gemeinschaft von Menschen, die ähnliche Erfahrungen und Ziele teilen. Unser soziales Netzwerk bietet einen Raum zum
-            Vernetzen, Erfahrungen austauschen und an Projekten zusammenarbeiten, die die Integration und das Verständnis fördern.</li>
-          <li><strong>IT-Sicherheit für alle:</strong> Sicherheit in der digitalen Welt - In einer zunehmend digitalen
-            Welt ist die Sicherstellung der Online-Sicherheit entscheidend. Unsere Initiativen zur IT-Sicherheit zielen darauf ab, Flüchtlinge darüber aufzuklären und zu befähigen, wie sie sich online schützen können, um eine sichere Umgebung für alle zu schaffen.</li>
+          <li><strong>التدريب على تكنولوجيا المعلومات وورش العمل:</strong> التمكين من خلال التعليم - اكتسب
+            المهارات الأساسية في تكنولوجيا المعلومات من خلال برامج التدريب وورش العمل الشاملة لدينا. بدءًا من
+            الثقافة الرقمية الأساسية إلى البرمجة المتقدمة، تم تصميم دوراتنا لتعزيز كفاءتك وفتح الأبواب أمام
+            الفرص الجديدة.</li>
+          <li><strong>بناء المجتمع:</strong> الاتصال، المشاركة، الازدهار - انضم إلى مجتمع داعم من الأفراد الذين
+            يشاركون نفس الرحلات والطموحات. توفر شبكتنا الاجتماعية مساحة للتواصل، ومشاركة التجارب، والتعاون في
+            المشاريع التي تعزز الاندماج والتفاهم.</li>
+          <li><strong>أمان تكنولوجيا المعلومات للجميع:</strong> السلامة في العالم الرقمي - في عالم رقمي يزداد
+            فيه الاعتماد على التكنولوجيا، يعد التأكد من الأمان عبر الإنترنت أمرًا حاسمًا. تهدف مبادرات أمان تكنولوجيا
+            المعلومات لدينا إلى تثقيف وتمكين اللاجئين حول كيفية حماية أنفسهم عبر الإنترنت، مما يعزز بيئة آمنة
+            للجميع.</li>
         </ul>
       </div>
     </div>
@@ -249,38 +247,35 @@
 
     <div class="card">
       <div class="card-body">
-        <h4 class="card-title text-info">Wie Sie sich beteiligen können</h4>
+        <h4 class="card-title text-info">كيف يمكنك المساهمة</h4>
         <ul class="card-text">
-          <li><strong>Freiwillige:</strong> Teilen Sie Ihr Wissen - Wir begrüßen Freiwillige mit IT-Expertise, die zu
-            unseren Schulungsprogrammen beitragen oder Einzelpersonen unterstützen möchten, die ihre Fähigkeiten
-            verbessern möchten. Ihr Wissen kann einen bedeutenden Einfluss auf die Reise zur Selbständigkeit einer
-            Person haben.</li>
-          <li><strong>Spenden:</strong> Unterstützen Sie die Sache - Ihre finanziellen Beiträge helfen uns, unsere
-            Programme aufrechtzuerhalten und mehr Menschen zu erreichen. Jede Spende, groß oder klein, fließt direkt in
-            die Bereitstellung von IT-Ressourcen und Schulungen für bedürftige Flüchtlinge.</li>
+          <li><strong>التطوع:</strong> شارك معرفتك - نرحب بالمتطوعين ذوي الخبرة في تكنولوجيا المعلومات للمساهمة في
+            برامج التدريب الخاصة بنا أو توجيه الأفراد الذين يسعون لتعزيز مهاراتهم. يمكن أن تكون معرفتك لها تأثير
+            كبير على رحلة شخص ما نحو الاكتفاء الذاتي.</li>
+          <li><strong>التبرع:</strong> دعم القضية - تساهم مساهماتك المالية في دعم برامجنا والوصول إلى المزيد من
+            الأفراد. كل تبرع، كبيرًا كان أم صغيرًا، يذهب مباشرة نحو توفير موارد تكنولوجيا المعلومات والتدريب
+            للاجئين المحتاجين.</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
       <div class="card-body">
-        <h4 class="card-title text-info">Beteiligen Sie sich noch heute!</h4>
-        <p class="card-text">Schließen Sie sich uns an, um eine Zukunft aufzubauen, in der Technologie ein Werkzeug für
-          Einheit, Verständnis und Ermächtigung wird. Gemeinsam können wir eine Gemeinschaft schaffen, in der jeder,
-          unabhängig von seiner Herkunft, die Möglichkeit hat, im digitalen Zeitalter zu gedeihen.</p>
-        <p class="card-text">Treffen Sie uns in den sozialen Medien, besuchen Sie unsere Veranstaltungen oder nehmen
-          Sie Kontakt auf, um mehr darüber zu erfahren, wie Sie sich beteiligen können. Lassen Sie uns gemeinsam durch
-          IT4Refugees - Soziales Netzwerk Koblenz eine bessere Zukunft aufbauen!</p>
+        <h4 class="card-title text-info">انضم اليوم!</h4>
+        <p class="card-text">انضم إلينا في بناء مستقبل حيث تصبح التكنولوجيا أداة للوحدة، والتفاهم، والتمكين. معًا،
+          يمكننا خلق مجتمع حيث يمتلك الجميع، بغض النظر عن خلفيتهم، الفرصة للنجاح في عصر الرقميات.</p>
+        <p class="card-text">تواصل معنا على وسائل التواصل الاجتماعي، شارك في فعالياتنا، أو تواصل لمعرفة المزيد
+          عن كيف يمكنك المساهمة. دعونا نبني مستقبلًا أفضل معًا من خلال IT4Refugees - Social Network Koblenz!</p>
       </div>
     </div>
 
     <div class="container mt-4">
       <div class="row">
         <div class="col btn-lg text-center">
-          <a href="blog.html" class="btn btn-success blog-link">Blog-Beiträge lesen</a>
+          <a href="blog.html" class="btn btn-success blog-link">قراءة المدونة</a>
         </div>
         <div class="col btn-lg text-center">
-          <a href="http://www.soziales-netzwerk-koblenz.de/" class="btn btn-info">Mehr erfahren</a>
+          <a href="http://www.soziales-netzwerk-koblenz.de/" class="btn btn-info">تعرف أكثر</a>
         </div>
       </div>
     </div>
@@ -299,30 +294,30 @@
   <div class="container mt-5">
     <div id="contact" class="card">
       <div class="card-header" id="referencesHeader">
-        <h2 class="card-title text-center text-info">Kontaktiere uns</h2>
+        <h2 class="card-title text-center text-info">اتصل بنا</h2>
       </div>
       <div class="card-body">
         <form id="contactForm" method="post" onsubmit="event.preventDefault(); submitForm();">
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label for="name">Name<span class="text-danger">*</span>:</label>
+              <label for="name">الاسم<span class="text-danger">*</span>:</label>
               <input type="text" class="form-control" id="name" name="name" required>
             </div>
             <div class="form-group col-md-6">
-              <label for="email">Email<span class="text-danger">*</span>:</label>
+              <label for="email">البريد الإلكتروني<span class="text-danger">*</span>:</label>
               <input type="email" class="form-control" id="email" name="email" required>
             </div>
           </div>
           <div class="form-group">
-            <label for="subject">Betreff<span class="text-danger">*</span>:</label>
+            <label for="subject">الموضوع<span class="text-danger">*</span>:</label>
             <input type="text" class="form-control" id="subject" name="subject" required>
           </div>
           <div class="form-group">
-            <label for="message">Nachricht (bis zu 100 Wörter)<span class="text-danger">*</span>:</label>
+            <label for="message">الرسالة (حتى 100 كلمة)<span class="text-danger">*</span>:</label>
             <textarea class="form-control" id="message" name="message" rows="4" maxlength="100" required></textarea>
           </div>
           <div class="text-center">
-            <button type="submit" class="btn btn-info">Absenden</button>
+            <button type="submit" class="btn btn-info">إرسال</button>
           </div>
         </form>
       </div>
@@ -389,47 +384,7 @@
     </div>
   </div>
 
-
-
-
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="../common/js/navbar.js"></script>
-  <script>
-    function showMessage(message) {
-      alert(message);
-    }
-
-    function submitForm() {
-      // Sie können hier eine Formularüberprüfung durchführen, wenn nötig
-
-      // Angenommen, das Formular hat eine id="contactForm"
-      var form = document.getElementById("contactForm");
-
-      // Beispiel-URL zu Ihrer process_form.php-Datei
-      var actionUrl = "../common/php/process_form.php";
-
-      // Senden Sie das Formular mit der fetch-API
-      fetch(actionUrl, {
-        method: "POST",
-        body: new FormData(form)
-      })
-        .then(response => {
-          if (response.ok) {
-            // Formularübermittlung war erfolgreich
-            showMessage("Ihre Nachricht wurde erfolgreich gesendet!");
-          } else {
-            // Formularübermittlung fehlgeschlagen
-            showMessage("Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.");
-          }
-        })
-        .catch(error => {
-          // Ein Fehler ist während der Formularübermittlung aufgetreten
-          showMessage("Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.");
-          console.error("Error:", error);
-        });
-    }
-  </script>
+  <script src="../common/js/contact-form.js"></script>
 
 </body>
 

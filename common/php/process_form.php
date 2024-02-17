@@ -1,4 +1,12 @@
 <?php
+require __DIR__ . '/PHPMailer-master/src/PHPMailer.php';
+require __DIR__ . '/PHPMailer-master/src/Exception.php';
+require __DIR__ . '/PHPMailer-master/src/SMTP.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
+
 header("Content-Type: application/json");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -7,28 +15,59 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = test_input($_POST["subject"]);
     $message = test_input($_POST["message"]);
 
-    // Replace 'your_email@example.com' with the actual email address where you want to receive the messages
-    $to = "it4refugees.snk@gmail.com";
-    $subject = "New Contact Form Submission - $subject";
-    $headers = "From: $name <$email>";
+    echo "Starting to process the form...<br>";
 
-    // You can customize the email message format here
-    $email_message = "Name: $name\n";
-    $email_message .= "Email: $email\n";
-    $email_message .= "Subject: $subject\n";
-    $email_message .= "Message: $message\n";
+    // Create a new PHPMailer instance
+    $mail = new PHPMailer(true);
 
-    // Send the email
-    $success = mail($to, $subject, $email_message, $headers);
+    try {
+        echo "Setting up PHPMailer...<br>";
 
-    // Prepare the response data
-    $response = array();
-    if ($success) {
-        $response["success"] = true;
-        $response["message"] = "Your message has been sent successfully!";
-    } else {
-        $response["success"] = false;
-        $response["message"] = "There was an error sending your message. Please try again later.";
+        // Gmail SMTP configuration
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'it4refugees.snk@gmail.com'; // Your Gmail email address
+        $mail->Password = ''; // Your Gmail password
+        $mail->SMTPSecure = 'tls';
+        $mail->Port = 587;
+
+        echo "SMTP configuration set up successfully...<br>";
+
+        // Recipients
+        $mail->setFrom('your_email@gmail.com', 'Your Name'); // Set the sender's email address and name
+        $mail->addAddress('it4refugees.snk@gmail.com'); // Add the recipient's email address
+        $mail->addReplyTo($email, $name); // Add a reply-to email address and name
+
+        echo "Recipient and reply-to addresses set up successfully...<br>";
+
+        // Content
+        $mail->isHTML(false); // Set email format to plain text
+        $mail->Subject = "New Contact Form Submission - $subject"; // Email subject
+        $mail->Body    = "Name: $name\nEmail: $email\nSubject: $subject\nMessage: $message"; // Email body
+
+        echo "Email content set up successfully...<br>";
+
+        // Send the email
+        echo "Sending the email...<br>";
+        $mail->send();
+
+        // Prepare the response data
+        $response = array(
+            "success" => true,
+            "message" => "Your message has been sent successfully!"
+        );
+
+        echo "Email sent successfully!<br>";
+    } catch (Exception $e) {
+        // If there's an error, prepare the response data
+        $response = array(
+            "success" => false,
+            "message" => "There was an error sending your message. Please try again later.",
+            "error" => $e->getMessage() // Include the error message for debugging
+        );
+
+        echo "Error sending the email: " . $e->getMessage() . "<br>";
     }
 
     // Output the response as JSON

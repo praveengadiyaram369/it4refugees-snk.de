@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT4Refugees-SNK</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../common/js/change-language.js"></script>
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="..."
+    crossorigin="anonymous">
+  <style>
+    /* Додайте власні стилі тут, якщо потрібно */
+
+    body.navbar-fixed {
+      padding-top: 60px;
+      /* Змініть це значення відповідно до висоти фіксованої навігаційної панелі */
+    }
+
+    .footer {
+      background-color: #5998a1;
+      padding: 20px;
+      margin-top: 2px;
+      text-align: center;
+    }
+
+    .background-container-1 {
+      width: 100%;
+      height: 80vh;
+      /* Змініть висоту за потребою */
+      background-image: url("../common/images/background.jpeg");
+      /* Вкажіть шлях до вашого зображення */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .background-container-2 {
+      width: 100%;
+      height: 60vh;
+      /* Змініть висоту за потребою */
+      background-image: url("../common/images/background2.jpeg");
+      /* Вкажіть шлях до вашого зображення */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .logo-center {
+      display: block;
+      margin: 0 auto;
+      /* Це вирівнює зображення по горизонталі */
+      width: 300px;
+      /* Встановіть ширину за потребою */
+      height: auto;
+      /* Підтримувати пропорції */
+    }
+
+    @media (min-width: 768px) {
+      .background-container-1 {
+        background-attachment: fixed;
+      }
+
+      .background-container-2 {
+        background-attachment: fixed;
+      }
+    }
+
+    body {
+      background-color: #f8f9fa;
+      color: #495057;
+    }
+
+    .card {
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-title {
+      text-align: center;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+
+    .btn-success {
+      background-color: #28a745;
+      border-color: #28a745;
+    }
+
+    .btn-success:hover {
+      background-color: #218838;
+      border-color: #218838;
+    }
+
+    .btn-info {
+      background-color: #17a2b8;
+      border-color: #17a2b8;
+    }
+
+    .btn-info:hover {
+      background-color: #138496;
+      border-color: #138496;
+    }
+
+    .text-info {
+      color: #17a2b8 !important;
+    }
+
+    /* Власні стилі для більших пунктів навігаційної панелі */
+    .navbar-nav .nav-item {
+      font-size: 22px;
+      /* Змініть розмір шрифту за потребою */
+    }
+
+    .text-danger {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-info text-white text-center py-3">
+    <a class="navbar-brand" href="index.html">
+      <img src="../common/images/it4refugees_logo.png" width="35" height="35" class="d-inline-block align-top"
+        alt="Ваш логотип">
+      IT4Refugees-SNK
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Головна</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">Про нас</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Контакти</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">Блог</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="background-container-1">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container mt-5">
+
+    <div class="card text-center mt-3">
+      <div class="card-body">
+        <h3 class="card-title mb-3 text-info">Хочете змінити мову?</h3>
+        <h5 class="card-text text-info">Виберіть свою улюблену мову нижче:</h5>
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <a href="#" class="btn btn-light btn-lg btn-block mb-3" onclick="changeLanguage('de')">
+              <img src="../common/flags/flag_de.png" alt="Німецький прапор" width="48" height="40">
+              <span class="ml-2">Німецька</span>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="#" class="btn btn-light btn-lg btn-block mb-3" onclick="changeLanguage('en')">
+              <img src="../common/flags/flag_en.png" alt="Прапор України" width="48" height="40">
+              <span class="ml-2">Aнглійська</span>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="#" class="btn btn-light btn-lg btn-block mb-3" onclick="changeLanguage('ar')">
+              <img src="../common/flags/flag_ar.png" alt="Арабський прапор" width="48" height="40">
+              <span class="ml-2">Арабська</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="container mt-5">
+
+    <div id="about" class="card">
+      <div class="card-body">
+        <h1 class="card-title text-info">Ласкаво просимо до IT4Refugees - Соціальна мережа Кобленц</h1>
+        <h3 class="card-title mt-4 text-info">Інтеграція через технології та ІТ-безпеку для всіх</h3>
+        <h4 class="card-title mt-4 text-info">Про нас</h4>
+        <p class="card-text">В IT4Refugees - Соціальна мережа Кобленц, ми віримо в трансформаційну силу технологій для
+          зменшення розривів, сприяння інтеграції та створення можливостей для всіх. Наша місія - надати підтримку
+          платформи, де біженці можуть використовувати потенціал інформаційних технологій для відновлення свого життя та
+          внесення вкладу у свої нові спільноти.</p>
+        <h4 class="card-title mt-4 text-info">Наше бачення</h4>
+        <p class="card-text">Уявіть собі світ, де кожна людина, незалежно від її походження, має доступ до інструментів
+          та знань, необхідних для успіху в цифрову епоху. Саме таке бачення спонукає IT4Refugees - Соціальна мережа
+          Кобленц. Ми мріємо бути каталізатором позитивних змін, використовуючи технології як засіб емповерменту та
+          включення.</p>
+      </div>
+    </div>
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <img src="../common/images/it4refugees_logo.png" alt="Опис зображення" class="logo-center">
+
+      </div>
+    </div>
+    <br>
+
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title text-info">Що ми пропонуємо</h4>
+        <ul class="card-text">
+          <li><strong>Навчання та семінари з ІТ:</strong> Емповермент через освіту - Отримайте основні навички з ІТ
+            завдяки нашим комплексним навчальним програмам та семінарам. Від базової цифрової грамотності до
+            високорівневого програмування, наші курси призначені для підвищення вашої кваліфікації та відкриття дверей до
+            нових можливостей.</li>
+          <li><strong>Будівництво спільноти:</strong> Підключайтесь, Діліться, Процвітайте - Приєднуйтеся до
+            підтримувальної спільноти людей, які поділяють схожі шляхи та амбіції. Наша соціальна мережа надає
+            можливість зв'язатися, поділитися досвідом та співпрацювати над проектами, які сприяють інтеграції та
+            взаєморозумінню.</li>
+          <li><strong>ІТ-безпека для всіх:</strong> Безпека в цифровому світі - У світі, що все більше цифровизується,
+            забезпечення безпеки онлайн має велике значення. Наші ініціативи з ІТ-безпеки спрямовані на навчання та
+            емповермент біженців у сфері захисту в Інтернеті, створюючи безпечне середовище для всіх.</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title text-info">Як ви можете внести вклад</h4>
+        <ul class="card-text">
+          <li><strong>Волонтерство:</strong> Поділіться своїми знаннями - Ми вітаємо волонтерів з інформаційно-технічними
+            навичками, щоб долучитися до наших навчальних програм або стати наставником для осіб, які прагнуть
+            покращити свої навички. Ваші знання можуть значно вплинути на чиюсь подорож до самодостатності.</li>
+          <li><strong>Пожертвування:</strong> Підтримайте справу - Ваші фінансові внески допомагають нам зберігати
+            наші програми та дотягуватися до більшої кількості осіб. Кожна пожертва, незалежно від її розміру, йде
+            безпосередньо на надання ІТ-ресурсів та навчання біженців, які потребують допомоги.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title text-info">Приєднуйтесь сьогодні!</h4>
+        <p class="card-text">Приєднуйтесь до нас у будівництві майбутнього, де технології стають інструментом єдності,
+          розуміння та емповерменту. Разом ми можемо створити спільноту, де кожен, незалежно від свого походження, має
+          можливість процвітати в цифрову епоху.</p>
+        <p class="card-text">Зв'яжіться з нами у соціальних мережах, відвідайте наші заходи або зв'яжіться, щоб
+          дізнатися більше про те, як ви можете долучитися. Давайте разом будувати яскраве майбутнє через IT4Refugees -
+          Соціальна мережа Кобленц!</p>
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col btn-lg text-center">
+          <a href="blog.html" class="btn btn-success blog-link">Читати блоги</a>
+        </div>
+        <div class="col btn-lg text-center">
+          <a href="http://www.soziales-netzwerk-koblenz.de/" class="btn btn-info">Дізнатися більше</a>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="background-container-2">
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div id="contact" class="card">
+      <div class="card-header" id="referencesHeader">
+        <h2 class="card-title text-center text-info">Зв'яжіться з нами</h2>
+      </div>
+      <div class="card-body">
+        <form id="contactForm" method="post" onsubmit="event.preventDefault(); submitForm();">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="name">Ім'я<span class="text-danger">*</span>:</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="email">Електронна пошта<span class="text-danger">*</span>:</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Тема<span class="text-danger">*</span>:</label>
+            <input type="text" class="form-control" id="subject" name="subject" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Повідомлення (до 100 слів)<span class="text-danger">*</span>:</label>
+            <textarea class="form-control" id="message" name="message" rows="4" maxlength="100" required></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-info">Надіслати</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+
+  
+  <!-- Bootstrap JS, Popper.js, and jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+  <!-- Footer -->
+  <footer class="footer text-center bg-info">
+    <div class="container">
+      <p>&copy; 2023 IT4refugees-SNK - Соціальна мережа Кобленцу E.V.<br>STEGEMANNSTR: 33-41 та LÖHRRONDELL 25 56068
+        КОБЛЕНЦ <br> Телефон: 0261 / 287 170 72 <br> Електронна пошта: info@soziales-netzwerk-koblenz.de</p>
+    </div>
+  </footer>
+
+  <div class="container mt-3">
+    <div class="card">
+      <div class="card-header" id="referencesHeader">
+        <h4 class="card-title text-center text-info">
+          <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#referencesCollapse"
+            aria-expanded="true" aria-controls="referencesCollapse">
+            References
+          </button>
+        </h4>
+      </div>
+
+      <div id="referencesCollapse" class="collapse" aria-labelledby="referencesHeader">
+        <div class="card-body">
+          <div class="image-caption text-center">
+            <ul>
+              <li><a target="_blank" href="https://icons8.com/icon/15534/great-britain">English</a> icon by <a
+                  target="_blank" href="https://icons8.com">Icons8</a></li>
+              <li><a target="_blank" href="https://icons8.com/icon/15502/germany">Germany</a> icon by <a target="_blank"
+                  href="https://icons8.com">Icons8</a></li>
+              <li><a target="_blank" href="https://icons8.com/icon/15538/ukraine">Ukraine</a> icon by <a target="_blank"
+                  href="https://icons8.com">Icons8</a></li>
+              <li><a target="_blank" href="https://icons8.com/icon/22438/saudi-arabia">Saudi Arabia</a> icon by <a
+                  target="_blank" href="https://icons8.com">Icons8</a></li>
+              <li>Foto von <a
+                  href="https://unsplash.com/de/@danny144?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Dan
+                  Nelson</a> auf <a
+                  href="https://unsplash.com/de/fotos/schwarzes-iphone-5-neben-braun-gerahmter-brille-und-schwarzem-iphone-5-c-ah-HeguOe9k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+              </li>
+              <li>Foto von <a
+                  href="https://unsplash.com/de/@guerrillabuzz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">GuerrillaBuzz</a>
+                auf <a
+                  href="https://unsplash.com/de/fotos/ikone-SYofhg_IX3A?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+              </li>
+              <li>Foto von <a href="https://www.flaticon.com/free-icons/information"
+                  title="information icons">Information icons created by Freepik - Flaticon</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
