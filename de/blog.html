@@ -1,189 +1,694 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap-icons.css" rel="stylesheet">
- 
+
   <title>IT4Refugees-SNK</title>
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="..." crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="..."
+    crossorigin="anonymous">
   <style>
     /* Add custom styles here if needed */
 
     body.navbar-fixed {
-        padding-top: 60px; /* Adjust this value based on the height of your fixed navbar */
-      }
+      padding-top: 60px;
+      /* Adjust this value based on the height of your fixed navbar */
+    }
+
     .footer {
       background-color: #5998a1;
       padding: 20px;
       margin-top: 2px;
       text-align: center;
     }
+
     body {
-        background-color: #f8f9fa;
-        color: #495057;
+      background-color: #f8f9fa;
+      color: #495057;
     }
 
 
     .text-info {
-        color: #17a2b8 !important;
+      color: #17a2b8 !important;
     }
 
     /* Custom styles for larger navbar items */
     .navbar-nav .nav-item {
-        font-size: 22px;   /* Adjust the font size as needed */
-        }
+      font-size: 22px;
+      /* Adjust the font size as needed */
+    }
+
+    h3 {
+      color: #333;
+    }
+
+    h4 {
+      color: #666;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    .accordion-header {
+      text-align: center;
+    }
   </style>
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-info text-white text-center py-3">
     <a class="navbar-brand" href="index.html">
-      <img src="../common/images/it4refugees_logo.png" width="35" height="35" class="d-inline-block align-top" alt="Your Logo">
+      <img src="../common/images/it4refugees_logo.png" width="35" height="35" class="d-inline-block align-top"
+        alt="Ihr Logo">
       IT4Refugees-SNK
     </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#contact">Contact</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
-            </li>
-        </ul>
-      </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Navigation umschalten">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Startseite</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#about">Über</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#contact">Kontakt</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">Blog</a>
+        </li>
+      </ul>
+    </div>
   </nav>
-  
 
-      <div class="container mt-5">
+
+
+
+  <div class="container mt-6">
+    <div class="card text-center mt-3">
+      <div class="card-body">
+        <h4 class="card-title mb-2 text-info">Klicken Sie auf die Links unten, um mehr über das Thema zu erfahren</h4>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container mt-5">
+
     <div id="accordionExample">
 
-        <!-- Panel 1 -->
-        <div class="accordion-item mb-3">
-            <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button bg-info text-white p-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <i class="bi bi-info-circle me-2"></i> Einführung in das Thema Internetbetrug
-                </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body card">
-                    Content for Panel 1 goes here.
-                </div>
-            </div>
-        </div>
+      <!-- Panel 1 -->
+      <div class="accordion-item mb-3">
+        <h2 class="accordion-header text-center" id="headingOne">
+          <button class="accordion-button bg-info text-white p-3" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <i class="bi bi-info-circle me-2"></i> Einführung in das Thema Internetbetrug
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body card">
+            <h3>Arten von Internetbetrug</h3>
+            <p>Internetbetrug bezieht sich auf betrügerische Aktivitäten, die online durchgeführt werden, um Geld,
+              persönliche Informationen oder andere Werte von Opfern zu stehlen. Diese betrügerischen Aktivitäten können
+              auf verschiedene Weise durchgeführt werden und zielen darauf ab, das Vertrauen oder die Unwissenheit von
+              Menschen auszunutzen. Hier sind einige der häufigsten Arten von Internetbetrug und wie sie funktionieren:
+            </p>
 
-        <!-- Panel 2 -->
-        <div class="accordion-item mb-3">
-          <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button bg-info text-white p-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                  <i class="bi bi-info-circle me-2"></i> Risiken im Internet 
-              </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-              <div class="accordion-body card">
-                  Content for Panel 1 goes here.
-              </div>
+            <h4>Phishing:</h4>
+            <ul>
+              <li>Beim Phishing erstellen Betrüger gefälschte E-Mails, Websites oder Nachrichten, die von
+                vertrauenswürdigen Quellen wie Banken, Regierungen oder großen Unternehmen zu stammen scheinen.</li>
+              <li>Opfer werden dazu gebracht, persönliche Informationen wie Benutzernamen, Passwörter, Kreditkartendaten
+                oder Sozialversicherungsnummern auf gefälschten Websites einzugeben.</li>
+              <li>Die Betrüger verwenden diese gestohlenen Informationen dann, um Geld abzuheben oder
+                Identitätsdiebstahl zu begehen.</li>
+            </ul>
+
+            <h4>Online-Auktions- und Verkaufsbetrug:</h4>
+            <ul>
+              <li>Betrüger bieten gefälschte oder nicht existierende Produkte oder Dienstleistungen auf Online-Auktions-
+                oder Verkaufsplattformen an.</li>
+              <li>Sie verlangen Vorauszahlungen von Opfern, liefern jedoch niemals die versprochenen Waren oder
+                Dienstleistungen.</li>
+            </ul>
+
+            <h4>Gefälschte Online-Shops:</h4>
+            <ul>
+              <li>Betrüger richten gefälschte Online-Shops ein, die echten Geschäften ähneln, aber tatsächlich keine
+                Produkte liefern.</li>
+              <li>Opfer kaufen scheinbar echte Produkte und tätigen Zahlungen, erhalten aber nie die bestellte Ware.
+              </li>
+            </ul>
+
+            <h4>Betrug mit gefälschten Lotterien oder Wettbewerben:</h4>
+            <ul>
+              <li>Opfer erhalten Benachrichtigungen über angebliche Gewinne in Lotterien oder Wettbewerben, an denen sie
+                nie teilgenommen haben.</li>
+              <li>Um den "Preis" zu beanspruchen, müssen sie oft eine Gebühr zahlen oder persönliche Informationen
+                angeben, die dann von den Betrügern gestohlen werden.</li>
+            </ul>
+
+            <h4>Love Scam (Romance Scam):</h4>
+            <ul>
+              <li>Betrüger geben vor, in Online-Dating-Beziehungen mit Opfern involviert zu sein.</li>
+              <li>Sie gewinnen das Vertrauen von Opfern, um Geld für erfundene Notfälle oder Reisen zu erbitten.</li>
+            </ul>
+
+            <h4>Investmentbetrug:</h4>
+            <ul>
+              <li>Betrüger versprechen hohe Renditen für Investitionen in angeblich lukrative Unternehmen oder
+                Kryptowährungen.</li>
+              <li>Opfer werden überredet, Geld zu investieren, verlieren es jedoch oft vollständig.</li>
+            </ul>
+
+            <h4>Identitätsdiebstahl:</h4>
+            <ul>
+              <li>Betrüger stehlen persönliche Informationen wie Sozialversicherungsnummern oder Kreditkartendaten, um
+                finanzielle Transaktionen durchzuführen oder auf Kosten der Opfer zu leben.</li>
+            </ul>
+
+            <p>Es ist wichtig, sich vor Internetbetrug zu schützen, indem man misstrauisch gegenüber unbekannten Quellen
+              ist, sicherstellt, dass Websites sicher sind (durch Überprüfung der URL und Verwendung sicherer
+              Zahlungsmethoden), das Offenlegen persönlicher Informationen vermeidet, das Klicken auf unbekannte Links
+              in E-Mails unterlässt und niemals Geld an unbekannte Personen sendet. Auch das Wissen über die
+              verschiedenen Betrugsmethoden ist hilfreich, um sich vor möglichen Gefahren zu schützen.</p>
           </div>
+        </div>
       </div>
+
+      <!-- Panel 2 -->
+      <div class="accordion-item mb-3">
+        <h2 class="accordion-header text-center" id="headingTwo">
+          <button class="accordion-button bg-info text-white p-3" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            <i class="bi bi-info-circle me-2"></i> Risiken im Internet
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body card">
+            <h3>Tipps zum Schutz vor Internetbetrug</h3>
+
+            <p>Das Bewusstsein für verschiedene Arten von Betrugsversuchen, einschließlich Phishing, gefälschten
+              Websites, Online-Betrug, Identitätsdiebstahl, Anlagebetrug und Romance-Scams, ist entscheidend, um sich
+              vor Internetbetrug zu schützen. Hier sind gängige Betrugsmethoden und wie Sie sich schützen können:</p>
+
+            <h4>Phishing:</h4>
+            <ul>
+              <li><strong>Methode:</strong> Betrüger senden gefälschte E-Mails oder Nachrichten, die von
+                vertrauenswürdigen Quellen zu stammen scheinen. Diese Nachrichten enthalten oft Links zu gefälschten
+                Websites oder Anhänge mit Malware.</li>
+              <li><strong>Schutz:</strong> Seien Sie misstrauisch gegenüber unerwarteten E-Mails oder Nachrichten.
+                Überprüfen Sie die Absenderadresse sorgfältig. Klicken Sie nicht auf verdächtige Links oder öffnen Sie
+                unbekannte Anhänge. Rufen Sie die Organisation direkt an, um die Echtheit einer Nachricht zu überprüfen.
+              </li>
+            </ul>
+
+            <h4>Gefälschte Websites:</h4>
+            <ul>
+              <li><strong>Methode:</strong> Betrüger erstellen gefälschte Websites, die echten ähneln, um persönliche
+                Informationen oder Zahlungen zu stehlen.</li>
+              <li><strong>Schutz:</strong> Überprüfen Sie die URL sorgfältig auf Rechtschreibfehler oder ungewöhnliche
+                Zeichen. Suchen Sie nach "https://" und einem Schlosssymbol in der Adressleiste. Kaufen Sie nur bei
+                vertrauenswürdigen Händlern.</li>
+            </ul>
+
+            <h4>Online-Betrug:</h4>
+            <ul>
+              <li><strong>Methode:</strong> Betrüger bieten gefälschte Produkte oder Dienstleistungen an und verlangen
+                Vorauszahlungen, ohne die versprochenen Waren oder Dienstleistungen zu liefern.</li>
+              <li><strong>Schutz:</strong> Recherchieren Sie Verkäufer und Unternehmen, bevor Sie Geld überweisen. Lesen
+                Sie Bewertungen und Beschwerden anderer Kunden. Verwenden Sie sichere Zahlungsmethoden wie Kreditkarten
+                mit Betrugsschutz.</li>
+            </ul>
+
+            <h4>Identitätsdiebstahl:</h4>
+            <ul>
+              <li><strong>Methode:</strong> Betrüger stehlen persönliche Informationen, um finanzielle Transaktionen
+                durchzuführen oder in Ihrem Namen zu handeln.</li>
+              <li><strong>Schutz:</strong> Schützen Sie Ihre persönlichen Informationen. Verwenden Sie starke Passwörter
+                und ändern Sie sie regelmäßig. Aktivieren Sie die Zwei-Faktor-Authentifizierung, wo möglich. Überwachen
+                Sie Ihre Finanz- und Kreditkartenabrechnungen auf verdächtige Aktivitäten.</li>
+            </ul>
+
+            <h4>Anlagebetrug:</h4>
+            <ul>
+              <li><strong>Methode:</strong> Betrüger versprechen hohe Renditen für Investitionen in riskante oder nicht
+                existente Unternehmen.</li>
+              <li><strong>Schutz:</strong> Seien Sie skeptisch gegenüber Angeboten, die zu schön erscheinen, um wahr zu
+                sein. Führen Sie gründliche Recherchen durch, bevor Sie investieren. Vertrauen Sie nur lizenzierten und
+                regulierten Finanzinstituten.</li>
+            </ul>
+
+            <h4>Romance Scam (Love Scam):</h4>
+            <ul>
+              <li><strong>Methode:</strong> Betrüger geben vor, in Online-Dating-Beziehungen involviert zu sein, um Geld
+                zu erbitten.</li>
+              <li><strong>Schutz:</strong> Seien Sie vorsichtig bei Online-Dating. Geben Sie niemals persönliche oder
+                finanzielle Informationen an jemanden weiter, den Sie online kennengelernt haben. Seien Sie skeptisch
+                gegenüber Geschichten über unerwartete finanzielle Notfälle.</li>
+            </ul>
+
+            <p>Die wichtigsten Schritte zur Verhinderung von Internetbetrug sind Vorsicht, kritisches Denken und
+              Achtsamkeit. Wenn etwas verdächtig erscheint, ist es ratsam, nicht zu reagieren und stattdessen die
+              Echtheit der Quelle oder Nachricht zu überprüfen. Informieren Sie sich über verschiedene Betrugsmethoden,
+              um potenzielle Betrügereien besser zu erkennen und zu vermeiden.</p>
+
+          </div>
+        </div>
+      </div>
+
 
       <!-- Panel 3 -->
       <div class="accordion-item mb-3">
-        <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button bg-info text-white p-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                <i class="bi bi-info-circle me-2"></i> Sichere Internetnutzung 
-            </button>
+        <h2 class="accordion-header text-center" id="headingThree">
+          <button class="accordion-button bg-info text-white p-3" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+            <i class="bi bi-info-circle me-2"></i> Sicherheit bei der Internetnutzung
+          </button>
         </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-            <div class="accordion-body card">
-                Content for Panel 1 goes here.
-            </div>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body card">
+            <h3>Tipps für sichere Internetnutzung</h3>
+
+            <p>Eine sichere Internetnutzung ist entscheidend, um Ihre persönlichen Daten und Ihre Online-Privatsphäre zu
+              schützen. Hier sind einige Tipps und bewährte Verfahren, die Ihnen helfen können:</p>
+
+            <ol>
+              <li>
+                <strong>Verwenden Sie starke Passwörter:</strong>
+                <ul>
+                  <li>Ein starkes Passwort ist komplex und schwer zu erraten. Es sollte mindestens 12 Zeichen lang sein
+                    und eine Kombination aus Groß- und Kleinbuchstaben, Zahlen und Sonderzeichen enthalten.</li>
+                  <li>Vermeiden Sie leicht erratbare Passwörter wie "123456" oder "Passwort". Verwenden Sie keine
+                    persönlichen Informationen wie Geburtstage oder Namen.</li>
+                  <li>Verwenden Sie für verschiedene Konten einzigartige Passwörter, um zu verhindern, dass alle Ihre
+                    Konten bei einem Datenleck kompromittiert werden.</li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Aktivieren Sie die Zwei-Faktor-Authentifizierung (2FA):</strong>
+                <ul>
+                  <li>2FA bietet eine zusätzliche Sicherheitsebene, indem es neben Ihrem Passwort eine weitere
+                    Authentifizierungsmethode erfordert, wie z. B. einen einmaligen Code, der an Ihr Mobilgerät gesendet
+                    wird.</li>
+                  <li>Aktivieren Sie 2FA für alle Ihre Konten, wo dies möglich ist, insbesondere für E-Mail- und
+                    Finanzkonten.</li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Seien Sie vorsichtig beim Öffnen von E-Mails und Anhängen:</strong>
+                <ul>
+                  <li>Seien Sie vorsichtig beim Empfang von E-Mails von unbekannten Absendern. Öffnen Sie keine
+                    verdächtigen Anhänge oder klicken Sie in solchen E-Mails auf Links.</li>
+                  <li>Überprüfen Sie die E-Mail-Adresse des Absenders und prüfen Sie Grammatik und Stil der Nachricht
+                    auf Unregelmäßigkeiten, die auf Phishing hinweisen können.</li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Halten Sie Ihre Software auf dem neuesten Stand:</strong>
+                <ul>
+                  <li>Halten Sie Ihr Betriebssystem, Ihre Anwendungen und Ihre Antivirensoftware auf dem neuesten Stand,
+                    um Sicherheitslücken zu schließen und Malware zu verhindern.</li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Verwenden Sie sichere Verbindungen:</strong>
+                <ul>
+                  <li>Vermeiden Sie das Durchsuchen von Websites ohne "https://", insbesondere beim Übertragen sensibler
+                    Informationen wie Passwörter oder Kreditkartennummern.</li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Seien Sie auf sozialen Netzwerken vorsichtig:</strong>
+                <ul>
+                  <li>Beschränken Sie die Menge an persönlichen Informationen, die Sie in sozialen Netzwerken teilen.
+                  </li>
+                  <li>Überprüfen Sie Ihre Datenschutzeinstellungen und beschränken Sie den Zugriff auf Ihre
+                    Informationen.</li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Verwenden Sie sichere Wi-Fi-Verbindungen:</strong>
+                <ul>
+                  <li>Verwenden Sie öffentliche Wi-Fi-Hotspots vorsichtig und stellen Sie sicher, dass Sie sichere
+                    Verbindungen verwenden, wenn Sie sensible Informationen übertragen.</li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Überwachen Sie Ihre Konten:</strong>
+                <ul>
+                  <li>Überprüfen Sie regelmäßig Ihre Bank- und Kreditkartenabrechnungen, um verdächtige oder
+                    ungewöhnliche Aktivitäten festzustellen.</li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Sicheres Passwortmanagement:</strong>
+                <ul>
+                  <li>Verwenden Sie einen Passwort-Manager, um Ihre Passwörter sicher zu speichern und zu organisieren.
+                    Passwort-Manager generieren oft starke Passwörter für Sie.</li>
+                  <li>Stellen Sie sicher, dass Ihr Masterpasswort für den Passwort-Manager besonders sicher ist.</li>
+                </ul>
+              </li>
+            </ol>
+
+            <p>Die Bedeutung von starken Passwörtern und deren Verwaltung liegt darin, Ihre digitalen Konten und Daten
+              zu schützen. Schwache Passwörter sind leicht zu erraten und können dazu führen, dass Hacker Zugriff auf
+              Ihre Konten erhalten. Durch die Verwendung starker Passwörter und die sorgfältige Verwaltung dieser
+              Passwörter, beispielsweise mit einem Passwort-Manager, können Sie Ihr Online-Leben sicherer machen und
+              sich vor Identitätsdiebstahl und anderen Cyberbedrohungen schützen.</p>
+          </div>
         </div>
-    </div>
-
-        <!-- Panel 4 -->
-        <div class="accordion-item mb-3">
-          <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button bg-info text-white p-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                  <i class="bi bi-info-circle me-2"></i> Erkennen von Betrug  
-              </button>
-          </h2>
-          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-              <div class="accordion-body card">
-                  Content for Panel 1 goes here.
-              </div>
-          </div>
       </div>
 
-        <!-- Panel 5 -->
-        <div class="accordion-item mb-3">
-          <h2 class="accordion-header" id="headingFive">
-              <button class="accordion-button bg-info text-white p-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                  <i class="bi bi-info-circle me-2"></i> Sicherheits-software und Tools 
-              </button>
-          </h2>
-          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-              <div class="accordion-body card">
-                  Content for Panel 1 goes here.
-              </div>
-          </div>
-      </div>
 
-        <!-- Panel 6 -->
+      <!-- Panel 4 -->
       <div class="accordion-item mb-3">
-        <h2 class="accordion-header" id="headingSix">
-            <button class="accordion-button bg-info text-white p-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
-                <i class="bi bi-info-circle me-2"></i> Schutz persönlicher Informationen 
-            </button>
+        <h2 class="accordion-header text-center" id="headingFour">
+          <button class="accordion-button bg-info text-white p-3" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+            <i class="bi bi-info-circle me-2"></i> Betrug erkennen
+          </button>
         </h2>
-        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-            <div class="accordion-body card">
-                Content for Panel 1 goes here.
-            </div>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body card">
+            <h3>Erkennen von verdächtigen E-Mails, Websites und Nachrichten</h3>
+
+            <p>Das Erkennen von verdächtigen E-Mails, Websites und Nachrichten erfordert ein wachsames Auge und
+              Kenntnisse über gängige Merkmale von Betrugsversuchen. Hier sind einige Beispiele für gefälschte
+              Kommunikation und gefälschte Websites:</p>
+
+            <ol>
+              <li>
+                <strong>Phishing-E-Mails:</strong>
+                <p><strong>Beispiel:</strong> Sie erhalten eine E-Mail, die vorgibt, von Ihrer Bank zu stammen, und Sie
+                  drängt, sofort auf einen Link zu klicken und Ihre Kontoinformationen zu überprüfen.</p>
+                <ul>
+                  <li><strong>Merkmale:</strong></li>
+                  <li>Die E-Mail-Adresse des Absenders ist verdächtig oder enthält Rechtschreibfehler.</li>
+                  <li>Der Text enthält Rechtschreib- oder Grammatikfehler.</li>
+                  <li>Die Nachricht fordert Sie dringend auf, auf einen Link zu klicken oder persönliche Informationen
+                    preiszugeben.</li>
+                  <li>Die URL des Links sieht seltsam aus oder führt nicht zur offiziellen Website der Institution.</li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Gefälschte Websites:</strong>
+                <p><strong>Beispiel:</strong> Sie stoßen auf eine Website, die wie eine bekannte Online-Shopping-Website
+                  aussieht, aber extrem niedrige Preise für Produkte anbietet.</p>
+                <ul>
+                  <li><strong>Merkmale:</strong></li>
+                  <li>Die URL enthält Rechtschreibfehler oder ist leicht abgeändert.</li>
+                  <li>Die Website hat ein unprofessionelles Design oder enthält Grammatikfehler.</li>
+                  <li>Es gibt keine Kontaktinformationen oder Datenschutzbestimmungen.</li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Betrügerische Nachrichten:</strong>
+                <p><strong>Beispiel:</strong> Sie erhalten eine Nachricht auf einer Social-Media-Plattform von jemandem,
+                  der behauptet, ein entfernter Verwandter zu sein, der dringend Geld für medizinische Ausgaben
+                  benötigt.</p>
+                <ul>
+                  <li><strong>Merkmale:</strong></li>
+                  <li>Die Nachricht fordert Sie dringend auf, Geld zu senden.</li>
+                  <li>Der Absender fragt nach persönlichen Informationen oder Finanzdetails.</li>
+                  <li>Sie haben keine echte Verbindung zu der Person, die die Nachricht gesendet hat.</li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Gewinnbenachrichtigungen:</strong>
+                <p><strong>Beispiel:</strong> Sie erhalten eine E-Mail, in der steht, dass Sie eine Lotterie gewonnen
+                  haben, an der Sie nie teilgenommen haben.</p>
+                <ul>
+                  <li><strong>Merkmale:</strong></li>
+                  <li>Die Nachricht fordert Sie auf, persönliche Informationen bereitzustellen oder eine Gebühr zu
+                    zahlen, um Ihre "Gewinne" zu erhalten.</li>
+                  <li>Der Absender verwendet eine private oder obskure E-Mail-Adresse.</li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Gefälschte Profile in sozialen Medien:</strong>
+                <p><strong>Beispiel:</strong> Sie erhalten eine Freundschaftsanfrage von einem Profil, das das Bild
+                  einer prominenten Person verwendet.</p>
+                <ul>
+                  <li><strong>Merkmale:</strong></li>
+                  <li>Das Profil enthält minimale Informationen und Fotos.</li>
+                  <li>Die Freundschaftsanfrage stammt von einem unbekannten Profil mit wenig oder keiner Aktivität.</li>
+                </ul>
+              </li>
+            </ol>
+
+            <p>Die oben genannten Merkmale dienen als Indikatoren, um verdächtige Kommunikation und Websites zu
+              identifizieren. Wenn Sie Zweifel an der Echtheit einer Nachricht oder Website haben, sollten Sie
+              zusätzliche Schritte unternehmen, um deren Echtheit zu überprüfen, wie z. B. die Institution oder Person
+              über alternative Mittel (z. B. Telefon) zu kontaktieren oder offizielle Kontakte zu verwenden.</p>
+
+            <p>Es ist wichtig, Ihren Instinkten zu vertrauen und vorsichtig zu handeln, wenn Sie Zweifel haben. Betrüger
+              sind erfinderisch, aber mit Kenntnissen über ihre Taktiken können Sie sich besser vor ihrem Betrug
+              schützen.</p>
+          </div>
         </div>
-    </div>
+      </div>
+
+
+      <!-- Panel 5 -->
+      <div class="accordion-item mb-3">
+        <h2 class="accordion-header text-center" id="headingFive">
+          <button class="accordion-button bg-info text-white p-3 w-100" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+            <i class="bi bi-info-circle me-2"></i> Sicherheitssoftware und -werkzeuge
+          </button>
+        </h2>
+
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body card">
+            <h3>Empfehlungen für Antivirensoftware, Firewall und andere Sicherheitsanwendungen:</h3>
+
+            <ol>
+              <li>
+                <strong>Antivirensoftware:</strong>
+                <ul>
+                  <li><strong>Windows:</strong> Windows Defender ist eine integrierte Antivirensoftware in Windows 10
+                    und Windows 11, die in der Regel ausreichend ist. Es gibt jedoch auch kostenpflichtige Optionen von
+                    Drittanbietern wie Norton, McAfee und Bitdefender.</li>
+                  <li><strong>Mac:</strong> Apple bietet XProtect, eine integrierte Antivirensoftware für Macs an.
+                    Einige beliebte Optionen von Drittanbietern sind Avast und Sophos.</li>
+                  <li><strong>Android:</strong> Apps wie Avast Mobile Security und Bitdefender Mobile Security bieten
+                    Schutz vor schädlicher Software für Android-Geräte.</li>
+                  <li><strong>iOS:</strong> iOS-Geräte sind weniger anfällig für Viren, da Apps im App Store streng
+                    überprüft werden. Die Verwendung von Antivirensoftware ist normalerweise nicht notwendig.</li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Firewall:</strong>
+                <ul>
+                  <li>Windows und macOS verfügen über integrierte Firewalls, die in der Regel standardmäßig aktiviert
+                    sind. Diese Einstellungen sollten Sie in der Regel nicht deaktivieren. Für erweiterte Steuerungen
+                    können Sie jedoch Firewalls von Drittanbietern wie ZoneAlarm oder Norton verwenden.</li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Sicherheitsanwendungen:</strong>
+                <ul>
+                  <li><strong>Virtuelles privates Netzwerk (VPN):</strong> Ein VPN verschlüsselt Ihre Internetverbindung
+                    und schützt Ihre Daten vor neugierigen Blicken. Beliebte VPN-Dienste sind NordVPN, ExpressVPN und
+                    CyberGhost.</li>
+                  <li><strong>Passwort-Manager:</strong> Passwort-Manager wie LastPass, Dashlane oder 1Password helfen
+                    Ihnen dabei, sichere Passwörter zu erstellen und zu speichern, um Ihre Konten zu schützen.</li>
+                  <li><strong>Anti-Malware-Tools:</strong> Neben Antivirensoftware können Anti-Malware-Tools wie
+                    Malwarebytes zusätzlichen Schutz bieten, indem sie gezielt Malware bekämpfen.</li>
+                </ul>
+              </li>
+            </ol>
+
+            <h3>Erklärung zur Verwendung von Sicherheitsbewussten Apps und Diensten:</h3>
+
+            <ol>
+              <li><strong>Regelmäßige Updates:</strong> Stellen Sie sicher, dass Ihr Betriebssystem, Ihre Apps und Ihre
+                Sicherheitssoftware auf dem neuesten Stand sind. Updates enthalten oft wichtige Sicherheitsupdates.</li>
+              <li><strong>Verwendung von starken Passwörtern und 2FA:</strong> Verwenden Sie komplexe Passwörter und
+                aktivieren Sie die Zwei-Faktor-Authentifizierung (2FA), wo immer möglich. Dies erhöht die Sicherheit
+                Ihrer Konten erheblich.</li>
+              <li><strong>Überprüfen Sie die App-Berechtigungen:</strong> Überprüfen Sie, welche Berechtigungen Apps auf
+                Ihrem Gerät haben. Gewähren Sie ihnen nur die notwendigen Berechtigungen.</li>
+              <li><strong>Vorsicht bei Phishing:</strong> Seien Sie skeptisch gegenüber verdächtigen E-Mails,
+                Nachrichten oder Links. Überprüfen Sie die Absenderadresse und den Inhalt sorgfältig.</li>
+              <li><strong>Verwenden Sie sichere Verbindungen:</strong> Nutzen Sie sichere Verbindungen (https://), wenn
+                Sie im Internet surfen, insbesondere wenn Sie persönliche Informationen eingeben.</li>
+              <li><strong>Sichern Sie Ihre Daten:</strong> Regelmäßige Backups Ihrer Daten sind entscheidend. Sichern
+                Sie Ihre Daten auf externen Festplatten oder in der Cloud, um Datenverlust durch Ransomware oder
+                Hardwarefehler zu verhindern.</li>
+              <li><strong>Datenschutz in sozialen Medien:</strong> Überprüfen Sie Ihre Datenschutzeinstellungen in
+                sozialen Medien und begrenzen Sie die Menge an persönlichen Informationen, die Sie teilen.</li>
+              <li><strong>Verwenden Sie vertrauenswürdige Quellen:</strong> Laden Sie Apps und Software nur aus
+                vertrauenswürdigen Quellen herunter, wie dem offiziellen App-Store oder der offiziellen Website des
+                Herstellers.</li>
+              <li><strong>Bilden und Schulen:</strong> Informieren Sie sich über aktuelle Sicherheitsbedrohungen und
+                -praktiken und sensibilisieren Sie sich und andere für Sicherheitsbewusstsein.</li>
+            </ol>
+
+            <p>Die sichere Verwendung von Apps und Diensten erfordert eine Kombination aus bewusstem Verhalten und der
+              Verwendung von Sicherheitstools. Indem Sie diesen Empfehlungen folgen, können Sie Ihr digitales Leben
+              besser schützen und das Risiko von Sicherheitsverletzungen minimieren.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Panel 6 -->
+      <div class="accordion-item mb-3">
+        <h2 class="accordion-header text-center" id="headingSix">
+          <button class="accordion-button bg-info text-white p-3" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+            <i class="bi bi-info-circle me-2"></i> Schutz persönlicher Informationen
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body card">
+            <h3>Wichtige persönliche Daten, die Sie nicht teilen sollten:</h3>
+
+            <ol>
+              <li>
+                <strong>Passwörter und PINs:</strong>
+                <p>Teilen Sie niemals Ihre Passwörter oder persönlichen Identifikationsnummern (PINs) mit anderen.
+                  Seriöse Dienstleister oder Institutionen werden Sie niemals nach solchen Informationen fragen.</p>
+              </li>
+
+              <li>
+                <strong>Finanzinformationen:</strong>
+                <p>Geben Sie keine Kreditkartennummern, Bankkontodetails oder andere Finanzinformationen an Personen
+                  weiter, denen Sie nicht vertrauen oder die Sie persönlich kennen.</p>
+              </li>
+
+              <li>
+                <strong>Geburtsdatum und Geburtsort:</strong>
+                <p>Diese Informationen können dazu verwendet werden, Ihre Identität zu stehlen. Geben Sie sie nur dann
+                  preis, wenn es unbedingt erforderlich ist, z. B. beim Eröffnen eines Bankkontos oder beim Ausfüllen
+                  offizieller Formulare.</p>
+              </li>
+
+              <li>
+                <strong>Medizinische Informationen:</strong>
+                <p>Ihre medizinischen Daten sind äußerst sensibel. Teilen Sie medizinische Vorgeschichte oder
+                  medizinische Informationen nicht mit Dritten, es sei denn, es ist für medizinische Zwecke oder
+                  Behandlungen notwendig.</p>
+              </li>
+
+              <li>
+                <strong>Private Fotos und Videos:</strong>
+                <p>Gehen Sie vorsichtig mit dem Teilen privater Fotos und Videos um. Stellen Sie sicher, dass Sie
+                  wissen, wer darauf zugreifen kann, und verwenden Sie sichere Methoden zum Teilen, wenn erforderlich.
+                </p>
+              </li>
+
+              <li>
+                <strong>Sozialversicherung in sozialen Medien:</strong>
+                <p>Beschränken Sie die Menge an persönlichen Informationen, die Sie in sozialen Medien teilen.
+                  Veröffentlichen Sie keine Informationen wie Ihre Adresse, Telefonnummer oder genaue Reisepläne
+                  öffentlich.</p>
+              </li>
+
+              <li>
+                <strong>Standortinformationen:</strong>
+                <p>Aktivieren Sie Standortfreigabe auf Ihrem Gerät und in Apps nur dann, wenn es absolut notwendig ist,
+                  um die App oder den Dienst zu nutzen.</p>
+              </li>
+
+              <li>
+                <strong>Biometrische Daten:</strong>
+                <p>Speichern Sie biometrische Daten wie Fingerabdrücke oder Gesichtserkennungsdaten sicher und teilen
+                  Sie sie nicht leichtfertig.</p>
+              </li>
+
+              <li>
+                <strong>Persönliche Identifikationsdaten:</strong>
+                <p>Dazu gehören Dinge wie Ihre Führerscheinnummer oder Passnummer. Geben Sie diese Informationen nur
+                  dann weiter, wenn es gesetzlich erforderlich ist oder wenn Sie Ihre Identität nachweisen müssen.</p>
+              </li>
+            </ol>
+
+            <h3>Datenschutz und sichere Kommunikation:</h3>
+
+            <ul>
+              <li>Verwenden Sie sichere Kommunikationsmethoden wie verschlüsselte E-Mails und Messaging-Dienste.</li>
+              <li>Aktivieren Sie die Zwei-Faktor-Authentifizierung (2FA) für Konten und Dienste, wo immer möglich.</li>
+              <li>Verwenden Sie sichere Passwörter und einen Passwort-Manager, um sie zu verwalten.</li>
+              <li>Überprüfen Sie regelmäßig Ihre Datenschutzeinstellungen in sozialen Medien und anderen Online-Konten.
+              </li>
+              <li>Gehen Sie vorsichtig mit Informationen in öffentlichen WLAN-Netzwerken um und verwenden Sie bei Bedarf
+                ein Virtual Private Network (VPN).</li>
+              <li>Nutzen Sie verschlüsselte Dienste und Apps für vertrauliche Gespräche und Dateifreigaben.</li>
+            </ul>
+
+            <p>Indem Sie sich bewusst sind, welche persönlichen Daten Sie schützen müssen, und bewährte Verfahren für
+              den Datenschutz befolgen, können Sie Ihr digitales Leben sicherer und privater gestalten.</p>
+          </div>
+        </div>
+      </div>
+
 
     </div>
-</div>
+  </div>
 
-      <br>
-      <br>
+  <br>
+  <br>
 
 
   <!-- Bootstrap JS, Popper.js, and jQuery -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
- 
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
   <!-- Footer -->
   <footer class="footer text-center bg-info">
     <div class="container">
-        <p>&copy; 2023 IT4refugees-SNK - Soziales Netzwerk Koblenz E.V.<br>STEGEMANNSTR: 33-41 und LÖHRRONDELL 8, 56068 KOBLENZ, DE   </p>
+      <p>&copy; 2023 IT4refugees-SNK - Soziales Netzwerk Koblenz E.V.<br>STEGEMANNSTR: 33-41 und LÖHRRONDELL 8, 56068
+        KOBLENZ, DE </p>
     </div>
-</footer>
+  </footer>
 
 
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="../common/js/navbar.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../common/js/navbar.js"></script>
 
 
 </body>
+
 </html>
-
-
-
-
-
-
-
-
