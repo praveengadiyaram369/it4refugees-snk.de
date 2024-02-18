@@ -400,7 +400,44 @@
     </div>
   </div>
 
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../common/js/navbar.js"></script>
+  <script>
+    function showMessage(message) {
+      alert(message);
+    }
+  
+    function submitForm() {
+      // Ви можете виконати перевірку форми тут, якщо потрібно
+  
+      // Припускаючи, що форма має id="contactForm"
+      var form = document.getElementById("contactForm");
+  
+      // Приклад URL до вашого файлу process_form.php
+      var actionUrl = "../common/php/process_form.php";
+  
+      // Відправити форму за допомогою fetch API
+      fetch(actionUrl, {
+        method: "POST",
+        body: new FormData(form)
+      })
+        .then(response => {
+          if (response.ok) {
+            // Відправлення форми було успішним
+            showMessage("Ваше повідомлення було успішно відправлено!");
+          } else {
+            // Відправлення форми не вдалося
+            showMessage("Виникла помилка під час відправлення вашого повідомлення. Будь ласка, спробуйте пізніше.");
+          }
+        })
+        .catch(error => {
+          // Під час відправлення форми сталася помилка
+          showMessage("Виникла помилка під час відправлення вашого повідомлення. Будь ласка, спробуйте пізніше.");
+          console.error("Error:", error);
+        });
+    }
+  </script>
+  
 </body>
 
 </html>

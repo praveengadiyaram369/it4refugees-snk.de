@@ -391,8 +391,44 @@
     </div>
   </div>
 
-  <script src="../common/js/contact-form.js"></script>
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../common/js/navbar.js"></script>
+  <script>
+    function showMessage(message) {
+      alert(message);
+    }
+  
+    function submitForm() {
+      // يمكنك تنفيذ التحقق من النموذج هنا إذا لزم الأمر
+  
+      // نفترض أن النموذج لديه id="contactForm"
+      var form = document.getElementById("contactForm");
+  
+      // عنوان URL المثال لملف process_form.php الخاص بك
+      var actionUrl = "../common/php/process_form.php";
+  
+      // قم بإرسال النموذج باستخدام واجهة fetch API
+      fetch(actionUrl, {
+        method: "POST",
+        body: new FormData(form)
+      })
+        .then(response => {
+          if (response.ok) {
+            // تمت إرسال النموذج بنجاح
+            showMessage("تم إرسال رسالتك بنجاح!");
+          } else {
+            // فشل إرسال النموذج
+            showMessage("حدث خطأ أثناء إرسال رسالتك. الرجاء المحاولة مرة أخرى في وقت لاحق.");
+          }
+        })
+        .catch(error => {
+          // حدث خطأ أثناء إرسال النموذج
+          showMessage("حدث خطأ أثناء إرسال رسالتك. الرجاء المحاولة مرة أخرى في وقت لاحق.");
+          console.error("Error:", error);
+        });
+    }
+  </script>
+  
 </body>
 
 </html>
