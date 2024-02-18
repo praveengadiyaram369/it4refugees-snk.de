@@ -35,8 +35,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "SMTP configuration set up successfully...<br>";
 
         // Recipients
-        $mail->setFrom('your_email@gmail.com', 'Your Name'); // Set the sender's email address and name
-        $mail->addAddress('it4refugees.snk@gmail.com'); // Add the recipient's email address
+        $mail->setFrom('it4refugees.snk@gmail.com', 'Praveen from SNK'); // Set the sender's email address and name
+
+        // Add multiple recipients
+        $recipients = array(
+            'it4refugees.snk@gmail.com'
+        );
+
+        foreach ($recipients as $recipient) {
+            $mail->addAddress($recipient); // Add each recipient's email address
+        }
+
         $mail->addReplyTo($email, $name); // Add a reply-to email address and name
 
         echo "Recipient and reply-to addresses set up successfully...<br>";
