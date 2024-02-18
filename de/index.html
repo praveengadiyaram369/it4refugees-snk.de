@@ -424,6 +424,7 @@
           if (response.ok) {
             // Formularübermittlung war erfolgreich
             showMessage("Ihre Nachricht wurde erfolgreich gesendet!");
+            form.reset();
           } else {
             // Formularübermittlung fehlgeschlagen
             showMessage("Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.");

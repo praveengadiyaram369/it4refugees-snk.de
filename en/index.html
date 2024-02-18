@@ -425,6 +425,7 @@
           if (response.ok) {
             // Form submission was successful
             showMessage("Your message has been sent successfully!");
+            form.reset();
           } else {
             // Form submission failed
             showMessage("There was an error sending your message. Please try again later.");
