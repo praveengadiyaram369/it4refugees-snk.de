@@ -134,6 +134,15 @@
     .text-danger {
       color: red;
     }
+  .modal-dialog {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+  }
+  
+  #cookieModal {
+      background-color: rgba(6, 171, 200, 0.2); /* Semi-transparent white */
+  }
   </style>
 </head>
 
@@ -349,7 +358,7 @@
   <!-- Footer -->
   <footer class="footer text-center bg-info">
     <div class="container">
-      <p>&copy; 2023 IT4refugees-SNK - Soziales Netzwerk Koblenz E.V.<br>STEGEMANNSTR: 33-41 und LÖHRRONDELL 8, 56068
+      <p>IT4refugees-SNK - Soziales Netzwerk Koblenz E.V.<br>STEGEMANNSTR: 33-41 und LÖHRRONDELL 8, 56068
         KOBLENZ, DE </p>
     </div>
   </footer>
@@ -397,6 +406,32 @@
   </div>
 
 
+<!-- Modal -->
+<div class="modal fade" id="cookieModal" tabindex="-1" role="dialog" aria-labelledby="cookieModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cookieModalLabel">No Tracking Here!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        We respect your privacy and don't use any tracking technologies or cookies on our website. That means your browsing experience remains anonymous – we won't collect data about your visits. We also avoid using external services like Adobe or Google Analytics.
+        <br><br>
+        Have questions? Contact us at <a href="mailto:it4refugees.snk@gmail.com">it4refugees.snk@gmail.com</a>.
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="acceptCookies()">Got it!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="d-none" id="cookieButton" data-toggle="modal" data-target="#cookieModal">
+  Launch modal
+</button>
 
 
 
@@ -437,8 +472,26 @@
           console.error("Error:", error);
         });
     }
-  </script>
 
+// Show the modal on page load
+window.onload = function() {
+  if (!localStorage.getItem('modalShown')) {
+    // Show the modal
+    $('#cookieModal').modal('show');
+    // Set flag in localStorage indicating modal has been shown
+    localStorage.setItem('modalShown', 'true');
+  }
+};
+
+function acceptCookies() {
+  // You can add code here to handle the acceptance of cookies, but since you're not using any cookies, no action is needed.
+}
+  
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
 
 
 </body>
