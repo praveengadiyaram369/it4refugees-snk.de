@@ -416,7 +416,7 @@
         هل لديك أسئلة؟ اتصل بنا على <a href="mailto:it4refugees.snk@gmail.com">it4refugees.snk@gmail.com</a>.
       </div>
       <div class="modal-footer justify-content-center">
-        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="acceptCookies()">حسناً!</button>
+        <button type="button" class="btn btn-info" data-dismiss="modal" onclick="acceptCookies()">حسناً!</button>
       </div>
     </div>
   </div>
@@ -469,13 +469,9 @@
 
 // Show the modal on page load
 window.onload = function() {
-  if (!localStorage.getItem('modalShown')) {
-    // Show the modal
-    $('#cookieModal').modal('show');
-    // Set flag in localStorage indicating modal has been shown
-    localStorage.setItem('modalShown', 'true');
-  }
+  document.getElementById('cookieButton').click();
 };
+
 
 function acceptCookies() {
   // You can add code here to handle the acceptance of cookies, but since you're not using any cookies, no action is needed.

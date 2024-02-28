@@ -167,6 +167,9 @@
             <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#impressum">Impressum</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
           <li class="nav-item">
@@ -287,6 +290,16 @@
           opportunity to thrive in the digital era.</p>
         <p class="card-text">Connect with us on social media, attend our events, or reach out to learn more about how
           you can get involved. Let's build a brighter future together through IT4Refugees - Social Network Koblenz!</p>
+      </div>
+    </div>
+
+    <div id="impressum" class="card">
+      <div class="card-body">
+        <h4 class="card-title text-info">Impressum</h4>
+        <p class="card-text">Join us in building a future where technology becomes a tool for unity, understanding, and
+          empowerment. Together, we can create a community where everyone, regardless of their background, has the
+          opportunity to thrive in the digital era.</p>
+
       </div>
     </div>
 
@@ -422,7 +435,7 @@
         Have questions? Contact us at <a href="mailto:it4refugees.snk@gmail.com">it4refugees.snk@gmail.com</a>.
       </div>
       <div class="modal-footer justify-content-center">
-        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="acceptCookies()">Got it!</button>
+        <button type="button" class="btn btn-info" data-dismiss="modal" onclick="acceptCookies()">Got it!</button>
       </div>
     </div>
   </div>
@@ -475,13 +488,9 @@
 
 // Show the modal on page load
 window.onload = function() {
-  if (!localStorage.getItem('modalShown')) {
-    // Show the modal
-    $('#cookieModal').modal('show');
-    // Set flag in localStorage indicating modal has been shown
-    localStorage.setItem('modalShown', 'true');
-  }
+  document.getElementById('cookieButton').click();
 };
+
 
 function acceptCookies() {
   // You can add code here to handle the acceptance of cookies, but since you're not using any cookies, no action is needed.

@@ -426,7 +426,7 @@
         Є питання? Зв'яжіться з нами за адресою <a href="mailto:it4refugees.snk@gmail.com">it4refugees.snk@gmail.com</a>.
       </div>
       <div class="modal-footer justify-content-center">
-        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="acceptCookies()">Зрозуміло!</button>
+        <button type="button" class="btn btn-info" data-dismiss="modal" onclick="acceptCookies()">Зрозуміло!</button>
       </div>
     </div>
   </div>
@@ -479,12 +479,7 @@
 
 // Show the modal on page load
 window.onload = function() {
-  if (!localStorage.getItem('modalShown')) {
-    // Show the modal
-    $('#cookieModal').modal('show');
-    // Set flag in localStorage indicating modal has been shown
-    localStorage.setItem('modalShown', 'true');
-  }
+  document.getElementById('cookieButton').click();
 };
 
 function acceptCookies() {
